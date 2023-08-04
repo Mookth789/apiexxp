@@ -15,7 +15,7 @@ router.post("/register", register);
 router.post("/login", login);
 router.post("/login-line", loginLine);
 router.post("/login-facebook", loginFacebook);
-router.post("/current-user", auth, currentUser);
-router.post("/current-admin", auth, adminCheck, currentUser);
+router.post("/current-user", currentUser);
+router.post("/current-admin", adminCheck, currentUser);
 
 module.exports = router;
